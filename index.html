@@ -1,0 +1,56 @@
+<!-- Ceci est le HTML de ma page de convertion de base. Elle permettra de convertir des nombre vers 
+ m'importe quelle base et pourrat etre facilement mis a jour grace aux JS  -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convertor</title>
+</head>
+<body>
+    <div class="main-container">
+        <!-- =======================Header de la page ======================= -->
+        <header>
+            <h1>Bienvenu sur <span id="app-name">Convertor</span>,<br>Votre app de convertion</h1>
+            
+        </header>
+    
+        <!-- =======================Main de la page======================= -->
+        <main>
+            <!-- Menu de choix de base de depard et base d'arrive -->
+            <div id="select-base-container">
+                <p>De la base </p>
+                <select name="base-depard" id="base-depard">
+                    <option value="no">...</option>
+                </select>
+                <p> vers la base </p>
+                <select name="base-arrive" id="base-arrive">
+                    <option value="no">...</option>
+                </select>
+            </div>
+            
+            <!-- Menu de convertion et d'affichage du resultat -->
+            <h2><center>Resultat</center></h2>
+            <div id="convert-result-container">
+                <input type="text" name="left-convert" id="left-convert" placeholder="Base 10">
+                <p>vers</p>
+                <input type="text" name="right-convert" id="right-convert" placeholder="Base 10">
+            </div>
+
+            <!-- Conteneur des historiques de convertion -->
+            <h2>Historique</h2>
+            <div id="historique-container"></div>
+
+        </main>
+    
+        <!--=======================Footer de la page======================= -->
+        <footer>
+            <p>Site pense et cree par <span>Akido LD 🦝</span> &copy;</p>
+        </footer>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

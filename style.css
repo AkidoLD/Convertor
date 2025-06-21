@@ -1,0 +1,107 @@
+/* ======================= Conteneur principaux======================= */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(205, 221, 255);
+    height: 100vh;
+    background-image: url(img/image-fond.jpg);
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16pt;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 750px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Pour Safari */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparence */    border-radius: 30px;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 15px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.096);
+}
+
+/* ==========================Message de bienvenu ==========================*/
+header >  h1{
+    font-size: 20pt;
+}
+
+header #app-name{
+    font-family: "MathJax_Fraktur",'Times New Roman', Times, serif, sans-serif, serif;
+    font-weight: 900;
+    color: green;
+    font-size: 26pt;
+}
+
+/* Conteneur de choix de la base de depart et d'arrive */
+#select-base-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -15px; 
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgba(0, 128, 0, 0.295);
+
+}
+
+#select-base-container  > select{
+    font-size: 14pt;
+    width: 180px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    height: 30px;
+}
+
+#select-base-container  > p {
+    font-weight: bold;
+}
+
+
+/* Conteneur de la convertion en elle mm  */
+#convert-result-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+#convert-result-container > input{
+    width: 220px;
+    height: 55px; 
+    font-size: 18pt;
+    margin: 0 10px;
+    padding: 14px 25px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+/* Container de l'historique */
+#historique-container{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* ===================Style du footer =================*/
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+    font-size: 13pt;
+}
+
+footer > p {
+    margin: 10px;
+    padding: 0;
+}
